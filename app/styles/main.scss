@@ -90,3 +90,20 @@ body {
     border-bottom: 0;
   }
 }
+
+
+/* My Stuff */
+.rptLogoRound {
+  border-radius: 25%;
+}
+
+
+/* Flower Slider Specific Stuff */
+#slidersAvg {
+  opacity: 0;
+  transition: .5s;
+}
+#slidersAvg:hover  {
+  opacity: 1;
+  transition: .5s;
+}

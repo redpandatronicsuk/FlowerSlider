@@ -1,23 +1,37 @@
 <div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
+  <h1>AngularJS D3 FlowerSlider</h1>
   <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
+    <img src="images/FlowerSlider.png" alt="RedPandaTronics"><br>
+    A customisable multi slider interface, with an average in the center and various visual feedbacks.
   </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
 </div>
 
 <div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
+  <h4>How to install</h4>
   <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
+    bower...
   </p>
 
-  <h4>Angular</h4>
+  <h4>Parameters</h4>
+  Flower slider
+  <rpt-flower-slider id="slider1" num-sliders="myNumSliders"
+  start-angle="0" stop-angle="360" slider-prefix="mySl" step-sliders="[0, 1, 2, 3, 8]"></rpt-flower-slider>
+  <rpt-flower-slider num-sliders="3" initial-values="[25, 50, 75]"
+  start-angle="45" angle-increment="45"></rpt-flower-slider>
+  END
   <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
+    FlowerSlider has a number of parameters you can customise:
+    <dl>
+    <dd>Number of sliders</dd>
+      <dt>blahhhh</dt>
+    <dd>Custom angle</dd>
+      <dt>blahhhh</dt>
+    </dl>
   </p>
 
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
+  <h4>Example</h4>
+  <p>Change the parameters as you like:</p>
+  <p>
+    Number of slider: <input type="range" min="1" max="15" ng-model="myNumSliders"> {{myNumSliders}}
+  </p>
 </div>
