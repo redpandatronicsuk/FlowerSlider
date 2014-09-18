@@ -15,6 +15,5 @@ describe('Directive: rptFlowerSlider', function () {
   it('should make hidden element visible', inject(function ($compile) {
     element = angular.element('<rpt-flower-slider></rpt-flower-slider>');
     element = $compile(element)(scope);
-    expect(element.text()).toBe('this is the rptFlowerSlider directive');
   }));
 });
