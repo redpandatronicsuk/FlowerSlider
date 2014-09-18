@@ -24,6 +24,9 @@ module.exports = function (grunt) {
   // Define the configuration for all the tasks
   grunt.initConfig({
 
+    // Project settings
+    yeoman: appConfig,
+
     //BuidControl:
     buildcontrol: {
       options: {
@@ -39,9 +42,6 @@ module.exports = function (grunt) {
         }
       }
     },
-
-    // Project settings
-    yeoman: appConfig,
 
     // Watches files for changes and runs tasks based on the changed files
     watch: {
